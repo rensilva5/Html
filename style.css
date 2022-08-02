@@ -1,0 +1,19 @@
+h1 {
+    color: orange;
+    font-size: 11vm;
+}
+#thisOne {
+    background-color: green;
+}
+.thisType {
+    background-color: lightblue;
+}
+.whitetext {
+    color: white;
+}
+.custom-box {
+width: 320px;
+padding: 10px;
+border: 5px solid grey;
+margin: 0
+}

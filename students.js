@@ -8,13 +8,15 @@ app.use(express.json())
 
 let students = ['bob', 'lily', 'charly', 'samantha']
 
-app.get("/", (req, res) => {
+app.get("/movies/:movieTitle", (req, res) => {
+    
+    const movieTitle = req.params.movieTitle
     let output = "<html><body><ul>" //start
     //output = output + "hello there thml" //middle
     for (let i=0; i < students.lenght; i++)
     output = output + 
     '<li><input type="checkbox">' +
-    students[i] + '</li>'
+    students[i] + '</li>' 
 
     output = output + "</ul></body></html>" //end
     res.send(output)

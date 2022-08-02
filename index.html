@@ -1,11 +1,29 @@
 <html>
     <head>
         <title>my first html</title>
+
+        <link rel="stylesheet" href="style.css">
+        
         <style>
-            h1 {
+           /* h1 {
                 color: orange;
                 font-size: 11vm;
             }
+            #thisOne {
+                background-color: yellow;
+            }
+            .thisType {
+                background-color: lightblue;
+            }
+            .whitetext {
+                color: white;
+            }
+            .custom-box {
+            width: 320px;
+            padding: 10px;
+            border: 5px solid grey;
+            margin: 0
+            }*/
         </style>
     </head>
     <body>
@@ -13,7 +31,7 @@
         <a href="/students.html">students </a>
         <header style="font-size: 5em; color: salmon">this is the hearder</header>
 
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_IQfpan5tDm9sc1dM0wnpwo8DMHaq7i-35PirXdf8q2BsjA2LJOa9hqN-ekHpJc5pTLY&usqp=CAU"
+        <img class="custom-box" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_IQfpan5tDm9sc1dM0wnpwo8DMHaq7i-35PirXdf8q2BsjA2LJOa9hqN-ekHpJc5pTLY&usqp=CAU"
         width="250">
         
         <br>
@@ -35,7 +53,8 @@
             <button>botton</button>
         </form>
         <!-- this is a comment -->
-        <h1>This is the header</h1>
+        <h1 id="thisOne">This is the header</h1>
+        <h1 class="thisType whitetext">This is another header</h1>
         <h2>It is to be smaller</h2>
         <p>this is a paragraph</p>
         <div>this is a div and more stuff</div>        
